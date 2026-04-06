@@ -4,7 +4,6 @@ import {
   Users, 
   Briefcase, 
   Calendar, 
-  Settings, 
   LogOut,
   ChevronRight,
   PieChart
@@ -63,13 +62,6 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, showToast }
       </div>
 
       <div className="mt-auto p-6 border-t border-slate-100">
-        <button 
-          onClick={() => showToast('Settings panel is under maintenance', 'info')}
-          className="flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-colors w-full px-3 py-2"
-        >
-          <Settings className="w-5 h-5" />
-          <span className="font-medium text-sm">Settings</span>
-        </button>
         <button 
           onClick={onLogout}
           className="flex items-center gap-3 text-rose-500 hover:text-rose-600 transition-colors w-full px-3 py-2 mt-2"
